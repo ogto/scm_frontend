@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/login/login.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="/login/login.js"></script>
+    <script src="/common/common.js"></script>
+    <title>Document</title>
+</head>
+<body>
+  <form action="index.html" method="post" class="loginForm">
+    <h2>Login</h2>
+    <div class="idForm">
+      <input type="text" id="userId" class="id" placeholder="ID">
+    </div>
+    <div class="passForm">
+      <input type="password" id="userPw" class="pw" placeholder="PW" onkeyup="enterKey('login')">
+    </div>
+    <button type="button" class="btn" onclick="loginTrial()">
+      LOG IN
+    </button>
+    <div class="bottomText">
+       비밀번호를 잊으셨나요? <a href="#" class="hlight">찾기</a>
+    </div>
+  </form>
+</body>
